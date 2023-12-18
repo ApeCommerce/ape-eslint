@@ -26,4 +26,5 @@ fs.writeJsonSync(`dist/package.json`, pkg, { spaces: 2 })
 
 fs.copySync('LICENSE', `dist/LICENSE`)
 fs.copySync('README.md', `dist/README.md`)
-fs.copySync('stylistic.js', `dist/stylistic.js`)
+
+fs.copySync('src/stylistic.js', `dist/stylistic.js`)
