@@ -22,7 +22,7 @@ npm install --save-dev \
   @typescript-eslint/parser \
   @typescript-eslint/eslint-plugin \
   @stylistic/eslint-plugin \
-  @apeframework/eslint-config  
+  @apeframework/eslint-config
 ```
 
 Create `.eslintrc.json` file:
@@ -44,7 +44,7 @@ Create `.eslintrc.json` file:
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended-type-checked",
-    "@apeframework/stylistic"
+    "@apeframework/eslint-config/stylistic"
   ]
 }
 ```
@@ -57,7 +57,7 @@ Install required NPM packages:
 npm install --save-dev \
   eslint \
   @stylistic/eslint-plugin \
-  @apeframework/eslint-config  
+  @apeframework/eslint-config
 ```
 
 Create `.eslintrc.json` file:
@@ -73,7 +73,7 @@ Create `.eslintrc.json` file:
   ],
   "extends": [
     "eslint:recommended",
-    "@apeframework/stylistic"
+    "@apeframework/eslint-config/stylistic"
   ]
 }
 ```
