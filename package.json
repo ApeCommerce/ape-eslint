@@ -1,0 +1,10 @@
+{
+  "name": "ape-eslint",
+  "private": true,
+  "peerDependencies": {
+    "@stylistic/eslint-plugin": "^1.4"
+  },
+  "devDependencies": {
+    "fs-extra": "^11.2"
+  }
+}
