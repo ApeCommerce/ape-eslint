@@ -94,6 +94,10 @@ module.exports = {
       'error',
       2,
     ],
+    '@stylistic/indent-binary-ops': [
+      'error',
+      2,
+    ],
     '@stylistic/key-spacing': [
       'error',
       {
@@ -314,6 +318,12 @@ module.exports = {
       'never',
     ],
     '@stylistic/type-annotation-spacing': [
+      'error',
+    ],
+    '@stylistic/type-generic-spacing': [
+      'error',
+    ],
+    '@stylistic/type-named-tuple-spacing': [
       'error',
     ],
     '@stylistic/wrap-iife': [
