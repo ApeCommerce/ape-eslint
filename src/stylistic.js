@@ -123,7 +123,7 @@ module.exports = {
     '@stylistic/max-len': [
       'error',
       {
-        'code': 90,
+        'code': 80,
         'ignorePattern': '^import',
       },
     ],
