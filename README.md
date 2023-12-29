@@ -8,7 +8,7 @@ GitHub repository: [ApeCommerce/ape-eslint](https://github.com/ApeCommerce/ape-e
 
 ## Installation
 
-Install the package and its peer dependencies:
+Install package and peer dependencies:
 
 ```
 npm install --save-dev @apeframework/eslint-config \
@@ -28,13 +28,43 @@ Create `.eslintrc.json` file:
 {
   "extends": [
     "@apeframework"
+  ]
+}
+```
+
+## Override
+
+To override configuration rules, add `overrides` in `.eslintrc.json`:
+
+```json
+{
+  "extends": [
+    "@apeframework"
   ],
-  "plugins": [
-    "@typescript-eslint",
-    "@stylistic",
-    "import",
-    "jest"
-  ],
-  "rules": {}
+  "overrides": [
+    {
+      "files": [
+        "**/*.ts",
+        "**/*.spec.ts"
+      ],
+      "plugins": [
+        "@typescript-eslint",
+        "@stylistic",
+        "import",
+        "jest"
+      ],
+      "rules": {}
+    },
+    {
+      "files": [
+        "**/*.js"
+      ],
+      "plugins": [
+        "@stylistic",
+        "import"
+      ],
+      "rules": {}
+    }
+  ]
 }
 ```
