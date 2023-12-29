@@ -36,7 +36,7 @@ Create `.eslintrc.json` file:
     "eslint-plugin-jest"
   ],
   "rules": {
-    ...
+    // ...
   }
 }
 ```
