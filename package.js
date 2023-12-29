@@ -17,14 +17,16 @@ const pkg = {
   publishConfig: {
     access: 'public',
   },
+  main: 'index.js',
+  dependencies: devPkg.dependencies,
   peerDependencies: devPkg.peerDependencies,
 };
 
 fs.ensureDirSync('dist');
 
-fs.writeJsonSync(`dist/package.json`, pkg, { spaces: 2 })
+fs.writeJsonSync('dist/package.json', pkg, { spaces: 2 })
 
-fs.copySync('LICENSE', `dist/LICENSE`)
-fs.copySync('README.md', `dist/README.md`)
+fs.copySync('LICENSE', 'dist/LICENSE')
+fs.copySync('README.md', 'dist/README.md')
 
-fs.copySync('src/stylistic.js', `dist/stylistic.js`)
+fs.copySync('src', 'dist')
