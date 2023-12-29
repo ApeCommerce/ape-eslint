@@ -1,4 +1,4 @@
-# Ape Framework ESLint configuration
+# Ape Framework's ESLint configuration
 
 [ESLint](https://eslint.org) configuration for [Ape Framework](https://github.com/ApeCommerce/ape-framework).
 
