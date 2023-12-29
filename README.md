@@ -8,7 +8,7 @@ GitHub repository: [ApeCommerce/ape-eslint](https://github.com/ApeCommerce/ape-e
 
 ## Installation
 
-Install the package with its peer dependencies:
+Install the package and its peer dependencies:
 
 ```
 npm install --save-dev @apeframework/eslint-config \
