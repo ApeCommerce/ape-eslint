@@ -30,10 +30,10 @@ Create `.eslintrc.json` file:
     "@apeframework"
   ],
   "plugins": [
-    "@typescript-eslint/eslint-plugin",
-    "@stylistic/eslint-plugin",
-    "eslint-plugin-import",
-    "eslint-plugin-jest"
+    "@typescript-eslint",
+    "@stylistic",
+    "import",
+    "jest"
   ],
   "rules": {}
 }
