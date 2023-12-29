@@ -11,8 +11,7 @@ GitHub repository: [ApeCommerce/ape-eslint](https://github.com/ApeCommerce/ape-e
 Install the package with its peer dependencies:
 
 ```
-npm install --save-dev \
-  @apeframework/eslint-config \
+npm install --save-dev @apeframework/eslint-config \
   eslint \
   @typescript-eslint/eslint-plugin \
   @stylistic/eslint-plugin \
