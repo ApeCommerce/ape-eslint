@@ -35,8 +35,6 @@ Create `.eslintrc.json` file:
     "eslint-plugin-import",
     "eslint-plugin-jest"
   ],
-  "rules": {
-    // ...
-  }
+  "rules": {}
 }
 ```
