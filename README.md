@@ -13,6 +13,7 @@ Install the package with its peer dependencies:
 ```
 npm install --save-dev @apeframework/eslint-config \
   eslint \
+  @typescript-eslint/parser \
   @typescript-eslint/eslint-plugin \
   @stylistic/eslint-plugin \
   eslint-plugin-import \

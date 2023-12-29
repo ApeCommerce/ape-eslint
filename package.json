@@ -2,13 +2,13 @@
   "name": "ape-eslint",
   "private": true,
   "dependencies": {
-    "@typescript-eslint/parser": "^6.16",
     "eslint-import-resolver-jest": "^3.0",
     "eslint-import-resolver-typescript": "^3.6"
   },
   "peerDependencies": {
     "@stylistic/eslint-plugin": "^1.5",
     "@typescript-eslint/eslint-plugin": "^6.16",
+    "@typescript-eslint/parser": "^6.16",
     "eslint": "^8.56",
     "eslint-plugin-import": "^2.29",
     "eslint-plugin-jest": "^27.6"
