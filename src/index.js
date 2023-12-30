@@ -42,7 +42,6 @@ export default {
         '**/*.js',
       ],
       parserOptions: {
-        sourceType: 'module',
         ecmaVersion: 'latest',
       },
       plugins: [

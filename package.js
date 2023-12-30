@@ -1,5 +1,5 @@
 #! /usr/bin/env node
-import fs from 'fs-extra'
+const fs = require('fs-extra')
 
 const devPkg = fs.readJsonSync('package.json')
 
@@ -17,8 +17,7 @@ const pkg = {
   publishConfig: {
     access: 'public',
   },
-  type: devPkg.type,
-  main: devPkg.main,
+  main: 'index.js',
   dependencies: devPkg.dependencies,
   peerDependencies: devPkg.peerDependencies,
 }
