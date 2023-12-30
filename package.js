@@ -17,7 +17,6 @@ const pkg = {
   publishConfig: {
     access: 'public',
   },
-  type: 'module',
   main: 'index.js',
   dependencies: devPkg.dependencies,
   peerDependencies: devPkg.peerDependencies,
