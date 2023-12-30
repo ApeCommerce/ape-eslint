@@ -1,6 +1,8 @@
 {
   "name": "ape-eslint",
   "private": true,
+  "type": "module",
+  "main": "index.js",
   "dependencies": {
     "eslint-import-resolver-jest": "^3.0",
     "eslint-import-resolver-typescript": "^3.6"

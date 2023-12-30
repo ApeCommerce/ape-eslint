@@ -17,12 +17,13 @@ const pkg = {
   publishConfig: {
     access: 'public',
   },
-  main: 'index.js',
+  type: devPkg.type,
+  main: devPkg.main,
   dependencies: devPkg.dependencies,
   peerDependencies: devPkg.peerDependencies,
-};
+}
 
-fs.ensureDirSync('dist');
+fs.ensureDirSync('dist')
 
 fs.writeJsonSync('dist/package.json', pkg, { spaces: 2 })
 
