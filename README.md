@@ -43,10 +43,7 @@ To override configuration rules, add `overrides` in `.eslintrc.json`:
   ],
   "overrides": [
     {
-      "files": [
-        "**/*.ts",
-        "**/*.spec.ts"
-      ],
+      "files": ["**/*.ts"],
       "plugins": [
         "@typescript-eslint",
         "@stylistic",
@@ -56,9 +53,7 @@ To override configuration rules, add `overrides` in `.eslintrc.json`:
       "rules": {}
     },
     {
-      "files": [
-        "**/*.js"
-      ],
+      "files": ["**/*.js"],
       "plugins": [
         "@stylistic",
         "import"
