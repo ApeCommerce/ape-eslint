@@ -1,6 +1,31 @@
 module.exports = {
   root: true,
+  plugins: [
+    '@stylistic',
+    'import',
+  ],
+  env: {
+    node: true,
+  },
+  settings: {
+    'import/resolver': {
+      node: true,
+    },
+  },
+  extends: [
+    '@apeframework/eslint-config/eslint',
+    '@apeframework/eslint-config/stylistic',
+    '@apeframework/eslint-config/import',
+  ],
   overrides: [
+    {
+      files: [
+        '**/*.js',
+      ],
+      parserOptions: {
+        ecmaVersion: 'latest',
+      },
+    },
     {
       files: [
         '**/*.ts',
@@ -11,54 +36,37 @@ module.exports = {
       },
       plugins: [
         '@typescript-eslint',
-        '@stylistic',
-        'import',
-        'jest',
       ],
-      env: {
-        'node': true,
-        'jest/globals': true,
-      },
       settings: {
         'import/resolver': {
-          node: true,
           typescript: true,
-          jest: {
-            jestConfigFile: 'jest.config.json',
-          },
         },
       },
       extends: [
-        '@apeframework/eslint-config/eslint',
         '@apeframework/eslint-config/typescript',
-        '@apeframework/eslint-config/stylistic',
-        '@apeframework/eslint-config/import',
-        '@apeframework/eslint-config/jest',
       ],
-    },
-    {
-      files: [
-        '**/*.js',
-      ],
-      parserOptions: {
-        ecmaVersion: 'latest',
-      },
-      plugins: [
-        '@stylistic',
-        'import',
-      ],
-      env: {
-        node: true,
-      },
-      settings: {
-        'import/resolver': {
-          node: true,
+      overrides: [
+        {
+          files: [
+            '**/*.spec.ts',
+          ],
+          plugins: [
+            'jest',
+          ],
+          env: {
+            'jest/globals': true,
+          },
+          settings: {
+            'import/resolver': {
+              jest: {
+                jestConfigFile: 'jest.config.json',
+              },
+            },
+          },
+          extends: [
+            '@apeframework/eslint-config/jest',
+          ],
         },
-      },
-      extends: [
-        '@apeframework/eslint-config/eslint',
-        '@apeframework/eslint-config/stylistic',
-        '@apeframework/eslint-config/import',
       ],
     },
   ],
