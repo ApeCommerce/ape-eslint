@@ -34,7 +34,7 @@ module.exports = {
       parserOptions: {
         project: 'tsconfig.json',
         ecmaFeatures: {
-          globalReturn: true,
+          impliedStrict: true,
         },
       },
       plugins: [
