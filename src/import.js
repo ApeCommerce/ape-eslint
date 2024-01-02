@@ -50,7 +50,7 @@ module.exports = {
       'off',
     ],
     'import/no-commonjs': [
-      'error',
+      'off',
     ],
     'import/no-cycle': [
       'error',
