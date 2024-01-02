@@ -28,6 +28,21 @@ Create `.eslintrc.json` file:
 {
   "extends": [
     "@apeframework"
+  ],
+  "rules": {},
+  "overrides": [
+    {
+      "files": ["**/*.ts"],
+      "plugins": ["@typescript-eslint"],
+      "rules": {},
+      "overrides": [
+        {
+          "files": ["**/*.spec.ts"],
+          "plugins": ["jest"],
+          "rules": {}
+        }
+      ]
+    }
   ]
 }
 ```
