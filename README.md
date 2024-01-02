@@ -63,3 +63,9 @@ To override configuration rules, add `overrides` in `.eslintrc.json`:
   ]
 }
 ```
+
+# TODO
+
+- eslint
+- typescript
+- jest
