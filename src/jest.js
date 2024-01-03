@@ -12,10 +12,10 @@ module.exports = {
       },
     ],
     'jest/expect-expect': [
-      'off',
+      'error',
     ],
     'jest/max-expects': [
-      'error',
+      'off',
     ],
     'jest/max-nested-describe': [
       'error',
