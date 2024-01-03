@@ -144,8 +144,8 @@ module.exports = {
           'type',
         ],
         'alphabetize': {
-          'order': 'asc',
-          'orderImportKind': 'asc',
+          order: 'asc',
+          orderImportKind: 'asc',
         },
         'newlines-between': 'never',
       },

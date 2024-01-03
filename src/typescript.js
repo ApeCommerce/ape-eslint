@@ -134,7 +134,7 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': [
       'error',
       {
-        'allowArgumentsExplicitlyTypedAsAny': true,
+        allowArgumentsExplicitlyTypedAsAny: true,
       },
     ],
     '@typescript-eslint/init-declarations': [
