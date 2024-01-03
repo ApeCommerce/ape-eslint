@@ -1,5 +1,10 @@
+'use strict'
+
 module.exports = {
   root: true,
+  parserOptions: {
+    ecmaVersion: 'latest',
+  },
   plugins: [
     '@stylistic',
     'import',
@@ -18,14 +23,6 @@ module.exports = {
     '@apeframework/eslint-config/import',
   ],
   overrides: [
-    {
-      files: [
-        '**/*.js',
-      ],
-      parserOptions: {
-        ecmaVersion: 'latest',
-      },
-    },
     {
       files: [
         '**/*.ts',

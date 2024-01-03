@@ -1,6 +1,9 @@
 {
   "name": "ape-eslint",
   "private": true,
+  "scripts": {
+    "lint": "eslint ."
+  },
   "dependencies": {
     "eslint-import-resolver-jest": "^3.0",
     "eslint-import-resolver-typescript": "^3.6"
@@ -13,7 +16,28 @@
     "eslint-plugin-import": "^2.29",
     "eslint-plugin-jest": "^27.6"
   },
+  "peerDependenciesMeta": {
+    "@stylistic/eslint-plugin": {
+      "optional": true
+    },
+    "@typescript-eslint/eslint-plugin": {
+      "optional": true
+    },
+    "@typescript-eslint/parser": {
+      "optional": true
+    },
+    "eslint-plugin-import": {
+      "optional": true
+    },
+    "eslint-plugin-jest": {
+      "optional": true
+    }
+  },
   "devDependencies": {
+    "@apeframework/eslint-config": "0.0.0-dev.20",
+    "@stylistic/eslint-plugin": "^1.5",
+    "eslint": "^8.56",
+    "eslint-plugin-import": "^2.29",
     "fs-extra": "^11.2"
   }
 }

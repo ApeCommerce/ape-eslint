@@ -1,3 +1,5 @@
+'use strict'
+
 module.exports = {
   plugins: [
     '@stylistic',
@@ -22,8 +24,8 @@ module.exports = {
     '@stylistic/arrow-spacing': [
       'error',
       {
-        'before': true,
-        'after': true,
+        before: true,
+        after: true,
       },
     ],
     '@stylistic/block-spacing': [
@@ -34,7 +36,7 @@ module.exports = {
       'error',
       '1tbs',
       {
-        'allowSingleLine': true,
+        allowSingleLine: true,
       },
     ],
     '@stylistic/comma-dangle': [
@@ -44,8 +46,8 @@ module.exports = {
     '@stylistic/comma-spacing': [
       'error',
       {
-        'before': false,
-        'after': true,
+        before: false,
+        after: true,
       },
     ],
     '@stylistic/comma-style': [
@@ -56,7 +58,7 @@ module.exports = {
       'error',
       'never',
       {
-        'enforceForClassMembers': true,
+        enforceForClassMembers: true,
       },
     ],
     '@stylistic/dot-location': [
@@ -82,8 +84,8 @@ module.exports = {
     '@stylistic/generator-star-spacing': [
       'error',
       {
-        'before': false,
-        'after': true,
+        before: false,
+        after: true,
       },
     ],
     '@stylistic/implicit-arrow-linebreak': [
@@ -101,16 +103,16 @@ module.exports = {
     '@stylistic/key-spacing': [
       'error',
       {
-        'beforeColon': false,
-        'afterColon': true,
-        'mode': 'strict',
+        beforeColon: false,
+        afterColon: true,
+        mode: 'strict',
       },
     ],
     '@stylistic/keyword-spacing': [
       'error',
       {
-        'before': true,
-        'after': true,
+        before: true,
+        after: true,
       },
     ],
     '@stylistic/linebreak-style': [
@@ -127,28 +129,27 @@ module.exports = {
     '@stylistic/max-len': [
       'error',
       {
-        'code': 80,
-        'ignorePattern': '^import',
+        code: 80,
+        ignorePattern: '^import',
       },
     ],
     '@stylistic/max-statements-per-line': [
       'error',
       {
-        'max': 1,
+        max: 1,
       },
     ],
     '@stylistic/member-delimiter-style': [
       'error',
       {
-        'singleline': {
-          'delimiter': 'comma',
-          'requireLast': false,
+        singleline: {
+          delimiter: 'comma',
+          requireLast: false,
         },
-        'multiline': {
-          'delimiter': 'comma',
-          'requireLast': true,
+        multiline: {
+          delimiter: 'comma',
+          requireLast: true,
         },
-        'multilineDetection': 'brackets',
       },
     ],
     '@stylistic/multiline-ternary': [
@@ -187,9 +188,9 @@ module.exports = {
     '@stylistic/no-multiple-empty-lines': [
       'error',
       {
-        'max': 1,
-        'maxBOF': 0,
-        'maxEOF': 0,
+        max: 1,
+        maxBOF: 0,
+        maxEOF: 0,
       },
     ],
     '@stylistic/no-tabs': [
@@ -208,8 +209,8 @@ module.exports = {
     '@stylistic/object-curly-newline': [
       'error',
       {
-        'consistent': true,
-        'multiline': true,
+        consistent: true,
+        multiline: true,
       },
     ],
     '@stylistic/object-curly-spacing': [
@@ -219,7 +220,7 @@ module.exports = {
     '@stylistic/object-property-newline': [
       'error',
       {
-        'allowAllPropertiesOnSameLine': true,
+        allowAllPropertiesOnSameLine: true,
       },
     ],
     '@stylistic/one-var-declaration-per-line': [
@@ -239,13 +240,13 @@ module.exports = {
     ],
     '@stylistic/quote-props': [
       'error',
-      'consistent',
+      'consistent-as-needed',
     ],
     '@stylistic/quotes': [
       'error',
       'single',
       {
-        'allowTemplateLiterals': true,
+        allowTemplateLiterals: false,
       },
     ],
     '@stylistic/rest-spread-spacing': [
@@ -259,8 +260,8 @@ module.exports = {
     '@stylistic/semi-spacing': [
       'error',
       {
-        'before': false,
-        'after': true,
+        before: false,
+        after: true,
       },
     ],
     '@stylistic/semi-style': [
@@ -274,9 +275,9 @@ module.exports = {
     '@stylistic/space-before-function-paren': [
       'error',
       {
-        'named': 'never',
-        'anonymous': 'always',
-        'asyncArrow': 'always',
+        named: 'never',
+        anonymous: 'always',
+        asyncArrow: 'always',
       },
     ],
     '@stylistic/space-in-parens': [
@@ -289,24 +290,24 @@ module.exports = {
     '@stylistic/space-unary-ops': [
       'error',
       {
-        'words': true,
-        'nonwords': false,
+        words: true,
+        nonwords: false,
       },
     ],
     '@stylistic/spaced-comment': [
       'error',
       'always',
       {
-        'block': {
-          'balanced': true,
+        block: {
+          balanced: true,
         },
       },
     ],
     '@stylistic/switch-colon-spacing': [
       'error',
       {
-        'before': false,
-        'after': true,
+        before: false,
+        after: true,
       },
     ],
     '@stylistic/template-curly-spacing': [
@@ -336,8 +337,8 @@ module.exports = {
     '@stylistic/yield-star-spacing': [
       'error',
       {
-        'before': false,
-        'after': true,
+        before: false,
+        after: true,
       },
     ],
   },

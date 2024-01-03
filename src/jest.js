@@ -1,3 +1,5 @@
+'use strict'
+
 module.exports = {
   plugins: [
     'jest',
@@ -5,9 +7,12 @@ module.exports = {
   rules: {
     'jest/consistent-test-it': [
       'error',
+      {
+        fn: 'test',
+      },
     ],
     'jest/expect-expect': [
-      'error',
+      'off',
     ],
     'jest/max-expects': [
       'error',
@@ -100,7 +105,7 @@ module.exports = {
       'error',
     ],
     'jest/prefer-expect-assertions': [
-      'error',
+      'off',
     ],
     'jest/prefer-expect-resolves': [
       'error',
@@ -112,7 +117,7 @@ module.exports = {
       'error',
     ],
     'jest/prefer-lowercase-title': [
-      'error',
+      'off',
     ],
     'jest/prefer-mock-promise-shorthand': [
       'error',

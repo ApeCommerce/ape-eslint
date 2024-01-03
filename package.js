@@ -1,4 +1,6 @@
 #! /usr/bin/env node
+'use strict'
+
 const fs = require('fs-extra')
 
 const devPkg = fs.readJsonSync('package.json')
@@ -20,6 +22,7 @@ const pkg = {
   main: 'index.js',
   dependencies: devPkg.dependencies,
   peerDependencies: devPkg.peerDependencies,
+  peerDependenciesMeta: devPkg.peerDependenciesMeta,
 }
 
 fs.ensureDirSync('dist')

@@ -1,3 +1,5 @@
+'use strict'
+
 module.exports = {
   plugins: [
     '@typescript-eslint',
@@ -131,6 +133,9 @@ module.exports = {
     ],
     '@typescript-eslint/explicit-module-boundary-types': [
       'error',
+      {
+        'allowArgumentsExplicitlyTypedAsAny': true,
+      },
     ],
     '@typescript-eslint/init-declarations': [
       'error',
@@ -172,7 +177,7 @@ module.exports = {
       'error',
     ],
     '@typescript-eslint/no-empty-function': [
-      'error',
+      'off',
     ],
     '@typescript-eslint/no-empty-interface': [
       'error',
@@ -214,7 +219,7 @@ module.exports = {
       'error',
     ],
     '@typescript-eslint/no-magic-numbers': [
-      'error',
+      'off',
     ],
     '@typescript-eslint/no-meaningless-void-operator': [
       'error',
@@ -403,7 +408,7 @@ module.exports = {
       'error',
     ],
     '@typescript-eslint/strict-boolean-expressions': [
-      'error',
+      'off',
     ],
     '@typescript-eslint/switch-exhaustiveness-check': [
       'error',

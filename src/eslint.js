@@ -1,3 +1,5 @@
+'use strict'
+
 module.exports = {
   rules: {
     'accessor-pairs': [
@@ -8,6 +10,7 @@ module.exports = {
     ],
     'arrow-body-style': [
       'error',
+      'always',
     ],
     'block-scoped-var': [
       'error',
@@ -97,10 +100,10 @@ module.exports = {
       'error',
     ],
     'max-lines': [
-      'error',
+      'off',
     ],
     'max-lines-per-function': [
-      'error',
+      'off',
     ],
     'max-nested-callbacks': [
       'error',
@@ -109,7 +112,7 @@ module.exports = {
       'error',
     ],
     'max-statements': [
-      'error',
+      'off',
     ],
     'multiline-comment-style': [
       'error',
@@ -205,7 +208,7 @@ module.exports = {
       'error',
     ],
     'no-empty-function': [
-      'error',
+      'off',
     ],
     'no-empty-pattern': [
       'error',
@@ -292,7 +295,7 @@ module.exports = {
       'error',
     ],
     'no-magic-numbers': [
-      'error',
+      'off',
     ],
     'no-misleading-character-class': [
       'error',
@@ -406,7 +409,7 @@ module.exports = {
       'error',
     ],
     'no-ternary': [
-      'error',
+      'off',
     ],
     'no-this-before-super': [
       'error',
@@ -421,7 +424,7 @@ module.exports = {
       'error',
     ],
     'no-undefined': [
-      'error',
+      'off',
     ],
     'no-underscore-dangle': [
       'error',
@@ -509,6 +512,7 @@ module.exports = {
     ],
     'one-var': [
       'error',
+      'never',
     ],
     'operator-assignment': [
       'error',
@@ -570,11 +574,11 @@ module.exports = {
     'sort-imports': [
       'error',
       {
-        'ignoreDeclarationSort': true,
+        ignoreDeclarationSort: true,
       },
     ],
     'sort-keys': [
-      'error',
+      'off',
     ],
     'sort-vars': [
       'error',
