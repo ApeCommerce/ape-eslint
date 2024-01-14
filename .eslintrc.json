@@ -1,5 +1,5 @@
 {
   "extends": [
-    "@apeframework/eslint/js"
+    "@apeframework/eslint-config/js"
   ]
 }

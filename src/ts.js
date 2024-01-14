@@ -3,7 +3,7 @@
 module.exports = {
   root: true,
   extends: [
-    '@apeframework/eslint/js',
+    '@apeframework/eslint-config/js',
   ],
   overrides: [
     {
@@ -26,7 +26,7 @@ module.exports = {
         },
       },
       extends: [
-        '@apeframework/eslint/rules/typescript',
+        '@apeframework/eslint-config/rules/typescript',
       ],
     },
   ],

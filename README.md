@@ -2,7 +2,7 @@
 
 [ESLint](https://eslint.org) configuration for [Ape Framework](https://github.com/ApeCommerce/ape-framework).
 
-NPM package: [@apeframework/eslint](https://www.npmjs.com/package/@apeframework/eslint).
+NPM package: [@apeframework/eslint-config](https://www.npmjs.com/package/@apeframework/eslint-config).
 
 GitHub repository: [ApeCommerce/ape-eslint](https://github.com/ApeCommerce/ape-eslint).
 
@@ -11,7 +11,7 @@ GitHub repository: [ApeCommerce/ape-eslint](https://github.com/ApeCommerce/ape-e
 Install package and peer dependencies:
 
 ```
-npm install --save-dev @apeframework/eslint \
+npm install --save-dev @apeframework/eslint-config \
   eslint \
   @typescript-eslint/parser \
   @typescript-eslint/eslint-plugin \
@@ -27,7 +27,7 @@ Create `.eslintrc.json` file:
 ```json
 {
   "extends": [
-    "@apeframework/eslint"
+    "@apeframework"
   ]
 }
 ```
@@ -37,7 +37,7 @@ To customize linting rules, use:
 ```json
 {
   "extends": [
-    "@apeframework/eslint"
+    "@apeframework"
   ],
   "plugins": [
     "@stylistic",

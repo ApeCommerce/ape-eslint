@@ -3,7 +3,7 @@
 module.exports = {
   root: true,
   extends: [
-    '@apeframework/eslint/ts',
+    '@apeframework/eslint-config/ts',
   ],
   overrides: [
     {
@@ -24,7 +24,7 @@ module.exports = {
         },
       },
       extends: [
-        '@apeframework/eslint/rules/jest',
+        '@apeframework/eslint-config/rules/jest',
       ],
     },
   ],

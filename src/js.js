@@ -18,8 +18,8 @@ module.exports = {
     },
   },
   extends: [
-    '@apeframework/eslint/rules/eslint',
-    '@apeframework/eslint/rules/stylistic',
-    '@apeframework/eslint/rules/import',
+    '@apeframework/eslint-config/rules/eslint',
+    '@apeframework/eslint-config/rules/stylistic',
+    '@apeframework/eslint-config/rules/import',
   ],
 }
