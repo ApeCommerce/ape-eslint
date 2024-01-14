@@ -32,7 +32,7 @@ Create `.eslintrc.json` file:
 }
 ```
 
-To customize linting rules, add `rules` in `.eslintrc.json` file:
+To customize linting rules, use:
 
 ```json
 {
