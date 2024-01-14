@@ -6,7 +6,7 @@ const fs = require('fs-extra')
 const devPkg = fs.readJsonSync('package.json')
 
 const pkg = {
-  name: '@apeframework/eslint-config',
+  name: '@apeframework/eslint',
   version: '__version__',
   license: 'MIT',
   author: 'Matthieu Symoens',
