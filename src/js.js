@@ -17,9 +17,9 @@ module.exports = {
       node: true,
     },
   },
-  extends: [
-    '@apeframework/eslint-config/rules/eslint',
-    '@apeframework/eslint-config/rules/stylistic',
-    '@apeframework/eslint-config/rules/import',
-  ],
+  rules: {
+    ...require('./rules/javascript'),
+    ...require('./rules/stylistic'),
+    ...require('./rules/import'),
+  },
 }

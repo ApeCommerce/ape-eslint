@@ -1,10 +1,7 @@
 'use strict'
 
 module.exports = {
-  root: true,
-  extends: [
-    '@apeframework/eslint-config/ts',
-  ],
+  ...require('./ts'),
   overrides: [
     {
       files: [
@@ -23,9 +20,9 @@ module.exports = {
           },
         },
       },
-      extends: [
-        '@apeframework/eslint-config/rules/jest',
-      ],
+      rules: {
+        ...require('./rules/jest'),
+      },
     },
   ],
 }

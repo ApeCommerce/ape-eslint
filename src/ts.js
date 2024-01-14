@@ -1,10 +1,7 @@
 'use strict'
 
 module.exports = {
-  root: true,
-  extends: [
-    '@apeframework/eslint-config/js',
-  ],
+  ...require('./js'),
   overrides: [
     {
       files: [
@@ -25,9 +22,9 @@ module.exports = {
           typescript: true,
         },
       },
-      extends: [
-        '@apeframework/eslint-config/rules/typescript',
-      ],
+      rules: {
+        ...require('./rules/typescript'),
+      },
     },
   ],
 }
