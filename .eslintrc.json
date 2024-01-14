@@ -1,23 +1,5 @@
 {
-  "root": true,
-  "parserOptions": {
-    "ecmaVersion": "latest"
-  },
-  "plugins": [
-    "@stylistic",
-    "import"
-  ],
-  "env": {
-    "node": true
-  },
-  "settings": {
-    "import/resolver": {
-      "node": true
-    }
-  },
   "extends": [
-    "@apeframework/eslint-config/eslint",
-    "@apeframework/eslint-config/stylistic",
-    "@apeframework/eslint-config/import"
+    "@apeframework/eslint/js"
   ]
 }
