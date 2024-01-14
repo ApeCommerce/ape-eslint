@@ -8,7 +8,7 @@ module.exports = {
     },
   ],
   'jest/expect-expect': [
-    'error',
+    'off',
   ],
   'jest/max-expects': [
     'off',

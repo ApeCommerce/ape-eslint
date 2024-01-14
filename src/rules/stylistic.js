@@ -3,7 +3,9 @@
 module.exports = {
   '@stylistic/array-bracket-newline': [
     'error',
-    'consistent',
+    {
+      multiline: true,
+    },
   ],
   '@stylistic/array-bracket-spacing': [
     'error',

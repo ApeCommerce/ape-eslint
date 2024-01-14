@@ -364,6 +364,14 @@ module.exports = {
   ],
   'no-restricted-exports': [
     'error',
+    {
+      restrictDefaultExports: {
+        direct: true,
+        defaultFrom: true,
+        namedFrom: true,
+        namespaceFrom: true,
+      },
+    },
   ],
   'no-restricted-globals': [
     'error',

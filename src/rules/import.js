@@ -9,7 +9,7 @@ module.exports = {
     'error',
   ],
   'import/dynamic-import-chunkname': [
-    'error',
+    'off',
   ],
   'import/export': [
     'error',
@@ -129,7 +129,6 @@ module.exports = {
     'error',
     {
       'groups': [
-        'unknown',
         'builtin',
         'external',
         'internal',
@@ -147,7 +146,7 @@ module.exports = {
     },
   ],
   'import/prefer-default-export': [
-    'error',
+    'off',
   ],
   'import/unambiguous': [
     'error',
