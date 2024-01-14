@@ -1,28 +1,22 @@
 'use strict'
 
 module.exports = {
-  ...require('./ts'),
+  root: true,
+  ...require('./config/js'),
   overrides: [
     {
       files: [
-        '**/*.spec.ts',
+        '**/*.ts',
       ],
-      plugins: [
-        'jest',
-      ],
-      env: {
-        'jest/globals': true,
-      },
-      settings: {
-        'import/resolver': {
-          jest: {
-            jestConfigFile: 'jest.config.json',
-          },
+      ...require('./config/ts'),
+      overrides: [
+        {
+          files: [
+            '**/*.spec.ts',
+          ],
+          ...require('./config/spec'),
         },
-      },
-      rules: {
-        ...require('./rules/jest'),
-      },
+      ],
     },
   ],
 }
